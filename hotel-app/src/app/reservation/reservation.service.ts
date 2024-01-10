@@ -16,6 +16,7 @@ getReservation(id: string): Reservation | undefined{
 }
 addReservation(reservation: Reservation): void{
   this.reservations.push(reservation);
+  console.log(this.reservations)
 }
 deleteReservation(id: string): void{
   let index = this.reservations.findIndex(res=> res.id ===id);
